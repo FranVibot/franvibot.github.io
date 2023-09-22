@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <h1>Práctica de consejos HTML</h1>
     <div class="wrapper">
         <details>
             <summary>
@@ -16,7 +17,8 @@
             </summary>
             <p>El atributo sirve para diferir la carga de la imagen hasta que el usuario se desplace hacia ella. <br>
             </p>
-            <img src='F:\DAW2\Diseño\html5.png' loading='lazy' alt='html5_imagen' width="170" height="100">
+            <img src='https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.png' loading='lazy' alt='html5_imagen'
+                width="170" height="100">
         </details>
     </div>
     <div class="wrapper">
@@ -156,11 +158,51 @@
             <summary>
                 9. Eliminación de caché de Favicon
             </summary>
-            <p> <br>
+            <p> Añadiendo "?v=2" al nombre del archivo, obliga al navegador a descargar una nueva version <br>
             </p>
-            <link rel="icon" href="/favicon.ico?v=2" />  
+            <link rel="icon" href="/favicon.ico?v=2" />
+        </details>
+    </div>
+    <div class="wrapper">
+        <details>
+            <summary>
+                10. El atributo "corrector ortográfico"
+            </summary>
+            <p>Utilizando "spellcheck" revisa el elemento en busca de errores ortográficos <br>
+            </p>
+            <label for="input1">spellcheck="true"</label>
+            <input type="text" id="input1" spellcheck="true">
+
+            <label for="input2">spellcheck="false"</label>
+            <input type="text" id="input2" spellcheck="false">
+        </details>
+    </div>
+    <div class="wrapper">
+        <details>
+            <summary>
+                11. Controles deslizantes HTML nativos
+            </summary>
+            <p>Utilizando "input type="range"" se pueden crear controles deslizantes <br>
+            </p>
+            <script>
+                const volume = document.getElementById('volume');
+                const result = document.getElementById('result');
+                result.value = volume.value;
+
+                volume.addEventListener('change', () => {
+                    result.value = volume.value;
+                });
+            </script>
+            <label for="volume">Volumen: </label>
+            <input type="range" id="volume" name="volume" min="0" max="20">
+
+            <label for="result">Tu elección: </label>
+            <input type="number" id="result" name="result">
         </details>
     </div>
 </body>
+<footer>
+    <a href="https://franvibot.github.io/index.html">Volver home</a>
+</footer>
 
 </html>
