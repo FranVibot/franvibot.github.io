@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Consejos HTML</title>
+    <base target="_blank">
+</head>
+
+<body>
+    <div class="wrapper">
+        <details>
+            <summary>
+                1. El atributo `loading=lazy`
+            </summary>
+            <p>El atributo sirve para diferir la carga de la imagen hasta que el usuario se desplace hacia ella. <br>
+            </p>
+            <img src='F:\DAW2\Diseño\html5.png' loading='lazy' alt='html5_imagen' width="170" height="100">
+        </details>
+    </div>
+    <div class="wrapper">
+        <details>
+            <summary>
+                2. Enlaces de correo electrónico, llamadas y SMS
+            </summary>
+            <a href="mailto:{franciscovibotperez@gmail.com}?subject={Practica1}&body={content}">
+                Mandar correo<br>
+            </a>
+
+            <a href="tel:{phone}">
+                Llamarnos<br>
+            </a>
+
+            <a href="sms:{phone}?body={content}">
+                Mandar un SMS
+            </a>
+        </details>
+    </div>
+    <div class="wrapper">
+        <details>
+            <summary>
+                3. Listas ordenadas del atributo `inicio`.
+            </summary>
+            <p>El atributo "start" sirve para poder empezar desde el numero que queramos en una lista ordenada. <br></p>
+            <ol start="20">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Go</li>
+            </ol>
+        </details>
+    </div>
+    <div class="wrapper">
+        <details>
+            <summary>
+                4. El elemento "metro"
+            </summary>
+            <p>El elemento "metro" se puede utilizar para medir cantidades mediante una barra sin necesidad de utilizar
+                JavaScript ni CSS<br>
+            </p>
+            <label for="value1">Bajo</label>
+            <meter id="value1" min="0" max="100" low="30" high="75" optimum="80" value="25"></meter>
+
+            <label for="value2">Medio</label>
+            <meter id="value2" min="0" max="100" low="30" high="75" optimum="80" value="50"></meter>
+
+            <label for="value3">Alto</label>
+            <meter id="value3" min="0" max="100" low="30" high="75" optimum="80" value="80"></meter>
+        </details>
+    </div>
+    <div class="wrapper">
+        <details>
+            <summary>
+                5. Búsqueda nativa HTML
+            </summary>
+            <p>La busqueda nativa sirve para buscar en una lista con varias opciones <br>
+            </p>
+            <div class="wrapper">
+                <h1>
+                    Native HTML Search
+                </h1>
+
+                <input list="items">
+
+                <datalist id="items">
+                    <option value="Marko Denic">
+                    <option value="FreeCodeCamp">
+                    <option value="FreeCodeTools">
+                    <option value="Web Development">
+                    <option value="Web Developer">
+                </datalist>
+            </div>
+        </details>
+    </div>
+    <div class="wrapper">
+        <details>
+            <summary>
+                6. Elemento de conjunto de campos
+            </summary>
+            <p>El elemento "fieldset" sirve para agrupar varios elementos como "label" dentro de un "form"<br>
+            </p>
+            <form>
+                <fieldset>
+                    <legend>Elige tu lenguaje favorito</legend>
+
+                    <input type="radio" id="javascript" name="language">
+                    <label for="javascript">JavaScript</label><br />
+
+                    <input type="radio" id="python" name="language">
+                    <label for="python">Python</label><br />
+
+                    <input type="radio" id="java" name="language">
+                    <label for="java">Java</label>
+                </fieldset>
+            </form>
+        </details>
+    </div>
+    <div class="wrapper">
+        <details>
+            <summary>
+                7. Abridor de ventanas
+            </summary>
+            <p>Cuando se pone "target="_blanc"" hace que la nueva pagina acceda a la original abriendo otra pesataña
+                <br>
+            </p>
+            <a href="https://markodenic.com/" target="_blank" rel="noopener">
+                Marko's website
+            </a>
+        </details>
+    </div>
+    <div class="wrapper">
+        <details>
+            <summary>
+                8. Elemento básico
+            </summary>
+            <p>Si se quiere abrir los enlaces del documento en otra pestaña se utiliza el elemento"base"
+                <br>
+            </p>
+            <div class="wrapper">
+                Este enlace se abrirá en otra pestaña: &nbsp;
+                <a href="https://freecodetools.org/">
+                    Free Code Tools
+                </a>
+
+                <p>
+                    Leer mas:<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base">
+                        MDN Documentation
+                    </a>
+                </p>
+        </details>
+    </div>
+    <div class="wrapper">
+        <details>
+            <summary>
+                9. Eliminación de caché de Favicon
+            </summary>
+            <p> <br>
+            </p>
+            <link rel="icon" href="/favicon.ico?v=2" />  
+        </details>
+    </div>
+</body>
+
+</html>
